@@ -1,0 +1,27 @@
+### GET /contatos
+GET http://localhost:5214/contatos
+
+### GET /contatos/{id}
+GET http://localhost:5214/contatos/1
+
+### POST /contatos
+POST http://localhost:5214/Contatos
+Content-Type: application/json
+
+{
+  "nome": "vitor",
+  "email": "teste@hotmail.com"
+}
+
+
+### PUT /contatos
+PUT http://localhost:5214/contatos/1
+Content-Type: application/json
+
+{
+  "nome": "asdasdas",
+  "email": "dasdasdsa"
+}
+
+### DELETE /contatos/{id}
+DELETE http://localhost:5214/contatos/1
