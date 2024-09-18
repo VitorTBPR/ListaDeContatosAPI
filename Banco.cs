@@ -3,13 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext {
 
-    public AppDbContext(
-        DbContextOptions<AppDbContext> options)
-         : base(options)
-    {
+    protected override void OnConfiguring(DbContextOptionsBuilder builder){
+        string con = "server=localhost;port=3306;"+"database=listacontatos;user=root;password=admin";
+        builder.UseMySQL(con);
     }
-
-    //Tabelas
+    
     public DbSet<Contato> Contatos => Set<Contato>();
 
 }
@@ -57,7 +55,7 @@ public class Banco
         return contatoExistente;
     }
 
-    public static bool deletecontato(int id)
+    public static bool deleteContato(int id)
     {
         var contatoExistente = contatos.FirstOrDefault(t => t.Id == id);
         if (contatoExistente == null)
