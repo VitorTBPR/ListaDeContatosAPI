@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Pinto Moreira\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj": {}
+    "C:\\Users\\vipmo\\OneDrive\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Pinto Moreira\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj": {
+    "C:\\Users\\vipmo\\OneDrive\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj",
+        "projectUniqueName": "C:\\Users\\vipmo\\OneDrive\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj",
         "projectName": "ListaDeContatos",
-        "projectPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj",
-        "packagesPath": "C:\\Users\\Vitor Pinto Moreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vitor Pinto Moreira\\Desktop\\ListaDeContatosAPI\\obj\\",
+        "projectPath": "C:\\Users\\vipmo\\OneDrive\\Desktop\\ListaDeContatosAPI\\ListaDeContatos.csproj",
+        "packagesPath": "C:\\Users\\vipmo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vipmo\\OneDrive\\Desktop\\ListaDeContatosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vitor Pinto Moreira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vipmo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -32,28 +32,33 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[7.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.InMemory": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[7.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.3, )"
             }
           },
           "imports": [
@@ -75,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }
