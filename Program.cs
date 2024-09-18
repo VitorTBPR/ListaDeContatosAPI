@@ -4,13 +4,16 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurações Swagger
-// builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen();
-//
+ builder.Services.AddEndpointsApiExplorer();
+ builder.Services.AddSwaggerGen();
+
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapGet("/", () => "Lista de Contatos");
 
